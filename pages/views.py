@@ -4,8 +4,30 @@ from pages.models import Servicio, Contacto
 
 
 def index(request):
+    error = None
+    enviado = False
+
+    if request.method == 'POST':
+        nombre = request.POST.get('nombre', '').strip()
+        correo = request.POST.get('correo', '').strip()
+        asunto = request.POST.get('asunto', '').strip()
+        mensaje = request.POST.get('mensaje', '').strip()
+
+        # validación muy básica
+        if not (nombre and correo and asunto and mensaje):
+            error = "Todos los campos son obligatorios."
+        else:
+            Contacto.objects.create(
+                nombre=nombre,
+                correo=correo,
+                asunto=asunto,
+                mensaje=mensaje
+            )
+            enviado = True
     return render(request, 'pages/index.html', {
-        'servicios': Servicio.objects.all()
+        'servicios': Servicio.objects.all(),
+        'error': error,
+        'enviado': enviado,
     })
 def about(request):
     return render(request, 'pages/about.html')
