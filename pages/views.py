@@ -8,27 +8,26 @@ def index(request):
     enviado = False
 
     if request.method == 'POST':
-        nombre = request.POST.get('nombre', '').strip()
-        correo = request.POST.get('correo', '').strip()
-        asunto = request.POST.get('asunto', '').strip()
+        nombre  = request.POST.get('nombre', '').strip()
+        correo  = request.POST.get('correo', '').strip()
+        asunto  = request.POST.get('asunto', '').strip()
         mensaje = request.POST.get('mensaje', '').strip()
 
-        # validación muy básica
         if not (nombre and correo and asunto and mensaje):
             error = "Todos los campos son obligatorios."
         else:
-            Contacto.objects.create(
-                nombre=nombre,
-                correo=correo,
-                asunto=asunto,
-                mensaje=mensaje
-            )
+            Contacto.objects.create(nombre=nombre,
+                                    correo=correo,
+                                    asunto=asunto,
+                                    mensaje=mensaje)
             enviado = True
+
     return render(request, 'pages/index.html', {
         'servicios': Servicio.objects.all(),
         'error': error,
         'enviado': enviado,
     })
+
 def about(request):
     return render(request, 'pages/about.html')
 

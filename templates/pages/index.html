@@ -358,87 +358,69 @@ por los servicios prestados.</p>
     ¡Tu cita ha sido solicitada con éxito!
   </div>
 {% endif %}
-{% if appointment_error %}
-  <div class="alert alert-danger">
-    {{ appointment_error }}
-  </div>
-{% endif %}
+  <h1 class="display-6 mb-5">Si tienes alguna consulta, contáctanos</h1>
 
-<form method="post" action="{% url 'pages:index' %}">
-  {% csrf_token %}
-  <div class="row g-3">
-    <div class="col-sm-6">
-      <div class="form-floating">
-        <input
-          type="text"
-          name="nombre"
-          class="form-control"
-          id="nombre"
-          placeholder="Tu Nombre"
-          value="{{ request.POST.nombre|default_if_none:'' }}"
-        >
-        <label for="nombre">Tu Nombre</label>
+  <form method="post" action="{% url 'pages:index' %}">
+    {% csrf_token %}
+    <div class="row g-3">
+      <div class="col-sm-6">
+        <div class="form-floating">
+          <input
+            type="text"
+            name="nombre"
+            class="form-control"
+            id="nombre"
+            placeholder="Tu Nombre"
+            value="{{ request.POST.nombre|default_if_none:'' }}"
+          >
+          <label for="nombre">Tu Nombre</label>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-floating">
+          <input
+            type="email"
+            name="correo"
+            class="form-control"
+            id="correo"
+            placeholder="Tu Correo"
+            value="{{ request.POST.correo|default_if_none:'' }}"
+          >
+          <label for="correo">Tu Correo</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-floating">
+          <input
+            type="text"
+            name="asunto"
+            class="form-control"
+            id="asunto"
+            placeholder="Asunto"
+            value="{{ request.POST.asunto|default_if_none:'' }}"
+          >
+          <label for="asunto">Asunto</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-floating">
+          <textarea
+            name="mensaje"
+            class="form-control"
+            id="mensaje"
+            placeholder="Mensaje"
+            style="height: 100px;"
+          >{{ request.POST.mensaje|default_if_none:'' }}</textarea>
+          <label for="mensaje">Mensaje</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary py-3 px-5" type="submit">
+          Enviar Mensaje
+        </button>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="form-floating">
-        <input
-          type="email"
-          name="correo"
-          class="form-control"
-          id="correo"
-          placeholder="Tu Correo"
-          value="{{ request.POST.correo|default_if_none:'' }}"
-        >
-        <label for="correo">Tu Correo</label>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="form-floating">
-        <input
-          type="text"
-          name="telefono"
-          class="form-control"
-          id="telefono"
-          placeholder="Tu Teléfono"
-          value="{{ request.POST.telefono|default_if_none:'' }}"
-        >
-        <label for="telefono">Tu Teléfono</label>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="form-floating">
-        <input
-          type="text"
-          name="servicio"
-          class="form-control"
-          id="servicio"
-          placeholder="Tipo de Servicio"
-          value="{{ request.POST.servicio|default_if_none:'' }}"
-        >
-        <label for="servicio">Tipo de Servicio</label>
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="form-floating">
-        <textarea
-          name="mensaje"
-          class="form-control"
-          id="mensaje"
-          placeholder="Mensaje"
-          style="height: 80px;"
-        >{{ request.POST.mensaje|default_if_none:'' }}</textarea>
-        <label for="mensaje">Mensaje</label>
-      </div>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary py-3 px-5" type="submit">
-        Solicitar Cita
-      </button>
-    </div>
-  </div>
-</form>
-
+  </form>
                     </div>
                 </div>
             </div>
