@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u#rb7y_z8m8f-!um&aje&2gujybd#u)6_1w#mxolkq3zmu*ual
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','www.seguroslavictoria.co','seguroslavictoria.co','https://www.seguroslavictoria.co/']
+ALLOWED_HOSTS = ['*','www.seguroslavictoria.co','seguroslavictoria.co','https://www.seguroslavictoria.co']
 
 
 # Application definition
@@ -52,10 +52,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 CORS_ALLOWED_ORIGINS = [
-    "https://www.seguroslavictoria.co/,https://seguroslavictoria.co/"
+    "https://www.seguroslavictoria.co,https://seguroslavictoria.co"
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://www.seguroslavictoria.co/','https://seguroslavictoria.co/'
+    'https://www.seguroslavictoria.co','https://seguroslavictoria.co'
 ]
 TEMPLATES = [
     {
