@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SEGUROS LA VICTORIA LTDA – Contáctanos</title>
+    <title><strong>SEGUROS LA VICTORIA LTDA</strong> – Contáctanos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -38,6 +38,31 @@
 
     <!-- Estilos del Tema -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <style>
+  /* Ajuste de color para los iconos sociales */
+  .header-social a {
+    color: rgba(255, 255, 255, 0.75);      /* blanco translucido */
+    transition: color 0.3s ease;
+  }
+  .header-social a:hover {
+    color: #a2d5f2;                        /* azul claro al pasar el ratón */
+  }
+
+  /* Logo más grande */
+  .navbar-brand .logo-img {
+    max-height: 300px;
+  }
+  @media (max-width: 576px) {
+    .navbar-brand .logo-img {
+      max-height: 200px;
+    }
+  }
+        <style>
+  .brand-text {
+    font-weight: 700;
+  }
+
+  </style>
 </head>
 
 <body>
@@ -47,58 +72,58 @@
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
 
-    <!-- Barra Superior -->
-    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
-        <div class="row gx-0 align-items-center">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="fa fa-phone-alt me-2"></i>
-                    <small>+573132125646 - +573107638963</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="far fa-envelope-open me-2"></i>
-                    <small>gerencia@seguroslavictoria.com</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="far fa-clock me-2"></i>
-                    <small>Lun - Vie: 07:00 am a 12:30 am - 2:00 pm a 5:00 pm</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
+<div class="container-fluid bg-success text-white py-2 px-0 d-block">
+  <div class="row gx-2 gx-lg-0 align-items-center">
+    <!-- Contacto: ocupa toda la fila en mobile, 7/12 en lg -->
+    <div class="col-12 col-lg-7 px-3 px-lg-5 text-center text-lg-start">
+      <div class="d-inline-flex flex-wrap justify-content-center justify-content-lg-start align-items-center me-4">
+        <i class="fa fa-phone-alt me-2"></i>
+        <small>+57 313 212 5646 – +57 310 763 8963</small>
+      </div>
+      <div class="d-inline-flex flex-wrap justify-content-center justify-content-lg-start align-items-center me-4">
+        <i class="far fa-envelope-open me-2"></i>
+        <small>gerencia@seguroslavictoria.com</small>
+      </div>
+      <div class="d-inline-flex flex-wrap justify-content-center justify-content-lg-start align-items-center">
+        <i class="far fa-clock me-2"></i>
+        <small>Lun – Vie: 07:00 am a 12:30 pm – 2:00 pm a 5:00 pm</small>
+      </div>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="{% url 'pages:index' %}" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0">
-                <img class="img-fluid me-3" src="{% static 'img/logoseguros.png' %}"
-                     alt="SEGUROS LA VICTORIA LTDA">
-                SEGUROS LA VICTORIA LTDA
-            </h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
-                <a href="{% url 'pages:index' %}" class="nav-item nav-link">Inicio</a>
-                <a href="{% url 'pages:about' %}" class="nav-item nav-link">Sobre Nosotros</a>
-                <a href="{% url 'pages:service' %}" class="nav-item nav-link">Servicios</a>
-                <a href="{% url 'pages:contact' %}" class="nav-item nav-link active">Contacto</a>
-            </div>
-        </div>
-        <a href="#" class="btn btn-primary px-3 d-none d-lg-block">Obtener Cotización</a>
-    </nav>
+    <!-- Redes sociales: ocupa toda la fila en mobile, 5/12 en lg -->
+    <div class="col-12 col-lg-5 px-3 px-lg-5 mt-2 mt-lg-0 text-center text-lg-end header-social">
+      <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+      <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+      <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+  <a href="{% url 'pages:index' %}" class="navbar-brand d-flex align-items-center">
+    <img class="img-fluid logo-img me-3" src="{% static 'img/logoseguros.png' %}" alt="<strong>SEGUROS LA VICTORIA LTDA</strong>">
+    <span class="h5 mb-0"><strong>SEGUROS LA VICTORIA LTDA</strong></span>
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav mx-auto bg-light rounded pe-4 py-2 py-lg-0">
+      <a href="{% url 'pages:index' %}" class="nav-item nav-link">Inicio</a>
+      <a href="{% url 'pages:about' %}" class="nav-item nav-link">Sobre Nosotros</a>
+      <a href="{% url 'pages:service' %}" class="nav-item nav-link">Servicios</a>
+      <a href="{% url 'pages:contact' %}" class="nav-item nav-link active">Contacto</a>
+    </div>
+  </div>
+
+  <!-- Botón siempre visible, centrado en mobile -->
+  <div class="d-flex align-items-center">
+    <a href="#" class="btn btn-primary px-3">Obtener Cotización</a>
+  </div>
+</nav>
     <!-- Encabezado de Página -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -211,8 +236,8 @@
                 <div class="col-lg-3 col-md-6">
                     <h1 class="text-white mb-4">
                         <img class="img-fluid me-3" src="{% static 'img/logoseguros.png' %}"
-                             alt="SEGUROS LA VICTORIA LTDA">
-                        SEGUROS LA VICTORIA LTDA
+                             alt="<strong>SEGUROS LA VICTORIA LTDA</strong>">
+                        <strong>SEGUROS LA VICTORIA LTDA</strong>
                     </h1>
                     <p>Compromiso, transparencia y protección a tu alcance.</p>
                     <div class="d-flex pt-2">
@@ -252,7 +277,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; 2025 SEGUROS LA VICTORIA LTDA, Todos los derechos reservados.
+                        &copy; 2025 <strong>SEGUROS LA VICTORIA LTDA</strong>, Todos los derechos reservados.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         Diseñado por <a href="https://htmlcodex.com">HTML Codex</a>
