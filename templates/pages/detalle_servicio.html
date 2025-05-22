@@ -35,65 +35,117 @@
 
     <!-- Estilos del Tema -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+ <style>
+        /* Siempre envuelve el texto si no cabe en una línea */
+.navbar-brand h1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+/* Asegura que el <strong> ocupe una línea propia cuando no quepa */
+.navbar-brand h1 strong {
+  white-space: normal;      /* permite saltos de línea */
+  flex-basis: 100%;         /* ocupa el 100% del ancho disponible */
+  text-align: center;       /* opcional: centrar texto en móvil */
+  font-size: 1rem;          /* ajustar ligeramente el tamaño para móvil */
+}
+
+/* Ajusta la imagen en móvil para que no ocupe demasiado espacio */
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-height: 40px;       /* reduce altura si es muy grande */
+    margin-right: 0.5rem;
+    margin-bottom: 0.25rem; /* separa un poco del texto */
+    flex: 0 0 auto;         /* evita que la imagen se estire */
+  }
+}
+
+  /* Ajuste de color para los iconos sociales */
+  .header-social a {
+    color: rgba(255, 255, 255, 0.75);      /* blanco translucido */
+    transition: color 0.3s ease;
+  }
+  .header-social a:hover {
+    color: #a2d5f2;                        /* azul claro al pasar el ratón */
+  }
+
+  /* Logo más grande */
+  .navbar-brand .logo-img {
+    max-height: 300px;
+  }
+  @media (max-width: 576px) {
+    .navbar-brand .logo-img {
+      max-height: 200px;
+    }
+  }
+        <style>
+  .brand-text {
+    font-weight: 700;
+  }
+
+  </style>
 </head>
 
 <body>
     <!-- Spinner -->
     <div id="spinner"
-         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
 
-    <!-- Barra Superior -->
-    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
-        <div class="row gx-0 align-items-center">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="fa fa-phone-alt me-2"></i>
-                    <small>+57 313 212 5646 / +57 310 738 8963</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="far fa-envelope-open me-2"></i>
-                    <small>gerencia@seguroslavictoria.com</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <i class="far fa-clock me-2"></i>
-                    <small>Lun - Vie: 07:00 am - 12:30 pm | 2:00 pm - 5:00 pm</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="text-white-50 ms-4" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
+<!-- Header con fondo verde y texto blanco -->
+<div class="container-fluid bg-success text-white py-2 px-0 d-none d-lg-block">
+  <div class="row gx-0 align-items-center">
+    <div class="col-lg-7 px-5 text-start">
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <i class="fa fa-phone-alt me-2"></i>
+        <small>+57 313 212 5646 – +57 310 763 8963</small>
+      </div>
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <i class="far fa-envelope-open me-2"></i>
+        <small>gerencia@seguroslavictoria.com</small>
+      </div>
+      <div class="h-100 d-inline-flex align-items-center">
+        <i class="far fa-clock me-2"></i>
+        <small>Lun – Vie: 07:00 am a 12:30 pm – 2:00 pm a 5:00 pm</small>
+      </div>
     </div>
+    <div class="col-lg-5 px-5 text-end header-social">
+      <div class="h-100 d-inline-flex align-items-center">
+        <a class="ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="ms-4" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a class="ms-4" href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
         <a href="{% url 'pages:index' %}" class="navbar-brand d-flex align-items-center">
             <h1 class="m-0">
-                <img class="img-fluid logo-img me-3" src="{% static 'img/logoseguros.png' %}" alt="Seguros Victoria">
-                <span class="fw-bold">Seguros Victoria</span>
+                <img class="img-fluid me-3" src="{% static 'img/logoseguros.png' %}" alt="">
+                <strong>SEGUROS LA VICTORIA LTDA</strong>
             </h1>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
-                <a href="{% url 'pages:index' %}" class="nav-item nav-link">Inicio</a>
+            <div
+                class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+                <a href="{% url 'pages:index' %}" class="nav-item nav-link active">Inicio</a>
                 <a href="{% url 'pages:about' %}" class="nav-item nav-link">Sobre Nosotros</a>
-                <a href="{% url 'pages:service' %}" class="nav-item nav-link">Servicios</a>
-                <a href="{% url 'pages:contact' %}" class="nav-item nav-link">Contacto</a>
+                <a href="{% url 'pages:service' %}" class="nav-item nav-link">Nuestros Servicios</a>
+
+                <a href="{% url 'pages:contact' %}" class="nav-item nav-link">Contáctanos</a>
             </div>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=573132125646&text=¡Hola!%20Quisiera%20una%20cotización."
-           class="btn btn-primary px-3">Obtener Cotización</a>
+        <a href="https://wa.link/wqkm8c" class="btn btn-primary px-3 d-none d-lg-block">Obtener Cotización</a>
     </nav>
 
     <!-- Cabecera de Página -->

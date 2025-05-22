@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title><strong>SEGUROS LA VICTORIA LTDA</strong></title>
+    <title>SEGUROS LA VICTORIA LTDA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -36,6 +36,32 @@
     <!-- Estilos del Tema -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <style>
+        /* Siempre envuelve el texto si no cabe en una línea */
+.navbar-brand h1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+/* Asegura que el <strong> ocupe una línea propia cuando no quepa */
+.navbar-brand h1 strong {
+  white-space: normal;      /* permite saltos de línea */
+  flex-basis: 100%;         /* ocupa el 100% del ancho disponible */
+  text-align: center;       /* opcional: centrar texto en móvil */
+  font-size: 1rem;          /* ajustar ligeramente el tamaño para móvil */
+}
+
+/* Ajusta la imagen en móvil para que no ocupe demasiado espacio */
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-height: 40px;       /* reduce altura si es muy grande */
+    margin-right: 0.5rem;
+    margin-bottom: 0.25rem; /* separa un poco del texto */
+    flex: 0 0 auto;         /* evita que la imagen se estire */
+  }
+}
+
   /* Ajuste de color para los iconos sociales */
   .header-social a {
     color: rgba(255, 255, 255, 0.75);      /* blanco translucido */
