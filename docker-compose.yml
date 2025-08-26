@@ -30,7 +30,7 @@ services:
       - '80:80'
       - '443:443'
     environment:
-      DOMAINS: 'seguroslavictoria.co -> http://backend:8002'
+      DOMAINS: 'seguroslavictoria.co -> http://backend:8002, www.seguroslavictoria.co => seguroslavictoria.co'
       STAGE: 'production'  
       CLIENT_MAX_BODY_SIZE: 5M
     volumes:
