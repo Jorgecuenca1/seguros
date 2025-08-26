@@ -34,15 +34,15 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <style>
         /* Siempre envuelve el texto si no cabe en una línea */
-        .navbar-brand h1 {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            margin: 0;
-        }
+.navbar-brand h1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
 
-        /* Asegura que el <strong> ocupe una línea propia cuando no quepa */
-        .navbar-brand h1 strong {
+/* Asegura que el <strong> ocupe una línea propia cuando no quepa */
+.navbar-brand h1 strong {
             white-space: normal;
             /* permite saltos de línea */
             flex-basis: 100%;
@@ -51,48 +51,48 @@
             /* opcional: centrar texto en móvil */
             font-size: 1rem;
             /* ajustar ligeramente el tamaño para móvil */
-        }
+}
 
-        /* Ajusta la imagen en móvil para que no ocupe demasiado espacio */
-        @media (max-width: 576px) {
-            .navbar-brand img {
+/* Ajusta la imagen en móvil para que no ocupe demasiado espacio */
+@media (max-width: 576px) {
+  .navbar-brand img {
                 max-height: 40px;
                 /* reduce altura si es muy grande */
-                margin-right: 0.5rem;
+    margin-right: 0.5rem;
                 margin-bottom: 0.25rem;
                 /* separa un poco del texto */
                 flex: 0 0 auto;
                 /* evita que la imagen se estire */
-            }
-        }
+  }
+}
 
-        /* Ajuste de color para los iconos sociales */
-        .header-social a {
+  /* Ajuste de color para los iconos sociales */
+  .header-social a {
             color: rgba(255, 255, 255, 0.75);
             /* blanco translucido */
-            transition: color 0.3s ease;
-        }
+    transition: color 0.3s ease;
+  }
 
-        .header-social a:hover {
+  .header-social a:hover {
             color: #a2d5f2;
             /* azul claro al pasar el ratón */
-        }
+  }
 
-        /* Logo más grande */
-        .navbar-brand .logo-img {
-            max-height: 300px;
-        }
+  /* Logo más grande */
+  .navbar-brand .logo-img {
+    max-height: 300px;
+  }
 
-        @media (max-width: 576px) {
-            .navbar-brand .logo-img {
-                max-height: 200px;
-            }
-        }
+  @media (max-width: 576px) {
+    .navbar-brand .logo-img {
+      max-height: 200px;
+    }
+  }
 
         <style>.brand-text {
-            font-weight: 700;
-        }
-    </style>
+    font-weight: 700;
+  }
+  </style>
 </head>
 
 <body>
@@ -102,33 +102,33 @@
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
 
-    <!-- Header con fondo verde y texto blanco VISIBLE en todas las pantallas -->
-    <div class="container-fluid bg-success text-white py-2 px-0">
-        <div class="row gx-0 align-items-center">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="fa fa-phone-alt me-2"></i>
-                    <small>+57 313 212 5646 – +57 310 763 8963</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <i class="far fa-envelope-open me-2"></i>
-                    <small>gerencia@seguroslavictoria.com</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <i class="far fa-clock me-2"></i>
-                    <small>Lun – Vie: 07:00 am a 12:30 pm – 2:00 pm a 5:00 pm</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end header-social">
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="ms-4" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="ms-4" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
+<!-- Header con fondo verde y texto blanco VISIBLE en todas las pantallas -->
+<div class="container-fluid bg-success text-white py-2 px-0">
+  <div class="row gx-0 align-items-center">
+    <div class="col-lg-7 px-5 text-start">
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <i class="fa fa-phone-alt me-2"></i>
+        <small>+57 313 212 5646 – +57 310 763 8963</small>
+      </div>
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <i class="far fa-envelope-open me-2"></i>
+        <small>gerencia@seguroslavictoria.com</small>
+      </div>
+      <div class="h-100 d-inline-flex align-items-center">
+        <i class="far fa-clock me-2"></i>
+        <small>Lun – Vie: 07:00 am a 12:30 pm – 2:00 pm a 5:00 pm</small>
+      </div>
     </div>
+    <div class="col-lg-5 px-5 text-end header-social">
+      <div class="h-100 d-inline-flex align-items-center">
+        <a class="ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="ms-4" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a class="ms-4" href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- Navbar -->
@@ -166,7 +166,7 @@
                             style="background: linear-gradient(135deg, rgba(13, 110, 253, 0.8) 0%, rgba(108, 117, 125, 0.6) 100%);">
                         </div>
                         <div class="carousel-caption h-100 d-flex align-items-center">
-                            <div class="container">
+                        <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-8 text-center">
                                         <h1 class="display-2 fw-bold text-white mb-4 animated slideInDown">
@@ -199,7 +199,7 @@
                             style="background: linear-gradient(135deg, rgba(25, 135, 84, 0.8) 0%, rgba(108, 117, 125, 0.6) 100%);">
                         </div>
                         <div class="carousel-caption h-100 d-flex align-items-center">
-                            <div class="container">
+                        <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-8 text-center">
                                         <h1 class="display-2 fw-bold text-white mb-4 animated slideInDown">
@@ -217,12 +217,12 @@
                                                 class="btn btn-warning btn-lg px-5 py-3 rounded-pill">
                                                 <i class="fas fa-phone me-2"></i>Llamar Ahora
                                             </a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
@@ -250,10 +250,10 @@
                                     style="min-width: 180px;">
                                     <h1 class="display-4 fw-bold mb-0">35</h1>
                                     <h5 class="mb-0">Años de Experiencia</h5>
-                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="ps-lg-4">
@@ -266,9 +266,9 @@
                         </p>
 
                         <!-- Características principales -->
-                        <div class="row g-4 mb-4">
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center">
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
                                     <div class="bg-primary bg-opacity-10 rounded-circle p-3 me-3">
                                         <i class="fas fa-cogs text-primary"></i>
                                     </div>
@@ -276,18 +276,18 @@
                                         <h6 class="fw-bold mb-0">Planes Flexibles</h6>
                                         <small class="text-muted">Adaptados a tu necesidad</small>
                                     </div>
-                                </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
                                     <div class="bg-success bg-opacity-10 rounded-circle p-3 me-3">
                                         <i class="fas fa-shield-alt text-success"></i>
-                                    </div>
+                            </div>
                                     <div>
                                         <h6 class="fw-bold mb-0">Garantía Total</h6>
                                         <small class="text-muted">Respaldo completo</small>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
                             </div>
                         </div>
 
@@ -299,7 +299,7 @@
 
                         <!-- Información de contacto -->
                         <div class="bg-white rounded-3 p-4 shadow-sm">
-                            <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center">
                                 <img class="rounded-circle me-3" src="{% static 'img/profile.jpg' %}" alt="Contacto"
                                     style="width: 60px; height: 60px; object-fit: cover;">
                                 <div>
@@ -333,11 +333,11 @@
                                 <h1 class="display-5" data-toggle="counter-up">MISIÓN</h1>
                                 <p class="fs-5 text">Somos una empresa especializada en la prestación de servicios de
                                     comercialización,
-                                    gestión y administración de planes de seguros a diferentes personas y
-                                    organizaciones para garantizar su protección ante diferentes situaciones de riesgos
-                                    futuras. Garantizando un excelente servicio y cumplimiento en los compromisos
-                                    adquiridos de manera eficiente, oportuna y segura, en un ambiente de respeto,
-                                    responsabilidad, integridad y calidez generando satisfacción del cliente.</p>
+gestión y administración de planes de seguros a diferentes personas y
+organizaciones para garantizar su protección ante diferentes situaciones de riesgos
+futuras. Garantizando un excelente servicio y cumplimiento en los compromisos
+adquiridos de manera eficiente, oportuna y segura, en un ambiente de respeto,
+responsabilidad, integridad y calidez generando satisfacción del cliente.</p>
 
 
                             </div>
@@ -345,11 +345,11 @@
                                 <h1 class="display-5" data-toggle="counter-up">VISIÓN</h1>
                                 <p class="fs-5 text"><strong>SEGUROS LA VICTORIA LTDA</strong>. Se proyecta como la
                                     empresa líder en el
-                                    departamento del meta, reconocida por ofrecer la protección que el
-                                    cliente busca en planes de seguros, distinguiéndonos por nuestra
-                                    seriedad, puntualidad, responsabilidad y personal calificado,
-                                    generando a nuestros clientes seguridad, comodidad y satisfacción
-                                    por los servicios prestados.</p>
+departamento del meta, reconocida por ofrecer la protección que el
+cliente busca en planes de seguros, distinguiéndonos por nuestra
+seriedad, puntualidad, responsabilidad y personal calificado,
+generando a nuestros clientes seguridad, comodidad y satisfacción
+por los servicios prestados.</p>
 
                             </div>
 
@@ -439,7 +439,7 @@
 
                         <!-- Imagen de fondo minimalista -->
                         <div class="service-image position-relative" style="height: 200px; overflow: hidden;">
-                            {% if s.imagen %}
+                            {% if s.imagen and s.imagen.url %}
                             <img src="{{ s.imagen.url }}" alt="{{ s.titulo }}" class="w-100 h-100"
                                 style="object-fit: cover; filter: brightness(0.9);">
                             {% else %}
@@ -1067,7 +1067,7 @@
 
                  padding: 2rem;
 
-                 background-image: url('{{ s.imagen.url }}');
+                 {% if s.imagen and s.imagen.url %}background-image: url('{{ s.imagen.url }}');{% else %}background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);{% endif %}
 
                  background-size: cover;
 

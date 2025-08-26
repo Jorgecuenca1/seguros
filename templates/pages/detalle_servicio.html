@@ -180,7 +180,7 @@
               <!-- Imagen del servicio -->
               <div class="col-lg-5">
                 <div class="position-relative" style="height: 400px;">
-                  {% if servicio.imagen %}
+                  {% if servicio.imagen and servicio.imagen.url %}
                   <img src="{{ servicio.imagen.url }}" alt="{{ servicio.titulo }}" class="w-100 h-100"
                     style="object-fit: cover;">
                   {% else %}
