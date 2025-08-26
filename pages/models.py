@@ -26,3 +26,25 @@ class Contacto(models.Model):
 
     def __str__(self):
         return f"{self.nombre} <{self.correo}> – {self.asunto}"
+
+class FAQ(models.Model):
+    pregunta = models.CharField("Pregunta", max_length=200)
+    respuesta = models.TextField("Respuesta")
+    categoria = models.CharField("Categoría", max_length=50, choices=[
+        ('general', 'General'),
+        ('seguros', 'Seguros'),
+        ('reclamos', 'Reclamos'),
+        ('pagos', 'Pagos'),
+        ('cobertura', 'Cobertura'),
+    ], default='general')
+    orden = models.PositiveIntegerField("Orden", default=0)
+    activa = models.BooleanField("Activa", default=True)
+    creada_en = models.DateTimeField("Creada el", auto_now_add=True)
+
+    class Meta:
+        ordering = ['categoria', 'orden', 'pregunta']
+        verbose_name = "Pregunta Frecuente"
+        verbose_name_plural = "Preguntas Frecuentes"
+
+    def __str__(self):
+        return self.pregunta

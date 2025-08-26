@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
-from pages.models import Servicio, Contacto
+from pages.models import Servicio, Contacto, FAQ
 
 def detalle_service(request, id):
     servicio = get_object_or_404(Servicio, id=id)
@@ -28,6 +28,7 @@ def index(request):
 
     return render(request, 'pages/index.html', {
         'servicios': Servicio.objects.all(),
+        'faqs': FAQ.objects.filter(activa=True),
         'error': error,
         'enviado': enviado,
     })

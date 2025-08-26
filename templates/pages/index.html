@@ -20,11 +20,8 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-        rel="stylesheet">
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
@@ -37,55 +34,65 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <style>
         /* Siempre envuelve el texto si no cabe en una línea */
-.navbar-brand h1 {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0;
-}
+        .navbar-brand h1 {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
 
-/* Asegura que el <strong> ocupe una línea propia cuando no quepa */
-.navbar-brand h1 strong {
-  white-space: normal;      /* permite saltos de línea */
-  flex-basis: 100%;         /* ocupa el 100% del ancho disponible */
-  text-align: center;       /* opcional: centrar texto en móvil */
-  font-size: 1rem;          /* ajustar ligeramente el tamaño para móvil */
-}
+        /* Asegura que el <strong> ocupe una línea propia cuando no quepa */
+        .navbar-brand h1 strong {
+            white-space: normal;
+            /* permite saltos de línea */
+            flex-basis: 100%;
+            /* ocupa el 100% del ancho disponible */
+            text-align: center;
+            /* opcional: centrar texto en móvil */
+            font-size: 1rem;
+            /* ajustar ligeramente el tamaño para móvil */
+        }
 
-/* Ajusta la imagen en móvil para que no ocupe demasiado espacio */
-@media (max-width: 576px) {
-  .navbar-brand img {
-    max-height: 40px;       /* reduce altura si es muy grande */
-    margin-right: 0.5rem;
-    margin-bottom: 0.25rem; /* separa un poco del texto */
-    flex: 0 0 auto;         /* evita que la imagen se estire */
-  }
-}
+        /* Ajusta la imagen en móvil para que no ocupe demasiado espacio */
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                max-height: 40px;
+                /* reduce altura si es muy grande */
+                margin-right: 0.5rem;
+                margin-bottom: 0.25rem;
+                /* separa un poco del texto */
+                flex: 0 0 auto;
+                /* evita que la imagen se estire */
+            }
+        }
 
-  /* Ajuste de color para los iconos sociales */
-  .header-social a {
-    color: rgba(255, 255, 255, 0.75);      /* blanco translucido */
-    transition: color 0.3s ease;
-  }
-  .header-social a:hover {
-    color: #a2d5f2;                        /* azul claro al pasar el ratón */
-  }
+        /* Ajuste de color para los iconos sociales */
+        .header-social a {
+            color: rgba(255, 255, 255, 0.75);
+            /* blanco translucido */
+            transition: color 0.3s ease;
+        }
 
-  /* Logo más grande */
-  .navbar-brand .logo-img {
-    max-height: 300px;
-  }
-  @media (max-width: 576px) {
-    .navbar-brand .logo-img {
-      max-height: 200px;
-    }
-  }
-        <style>
-  .brand-text {
-    font-weight: 700;
-  }
+        .header-social a:hover {
+            color: #a2d5f2;
+            /* azul claro al pasar el ratón */
+        }
 
-  </style>
+        /* Logo más grande */
+        .navbar-brand .logo-img {
+            max-height: 300px;
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand .logo-img {
+                max-height: 200px;
+            }
+        }
+
+        <style>.brand-text {
+            font-weight: 700;
+        }
+    </style>
 </head>
 
 <body>
@@ -95,33 +102,33 @@
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
 
-<!-- Header con fondo verde y texto blanco VISIBLE en todas las pantallas -->
-<div class="container-fluid bg-success text-white py-2 px-0">
-  <div class="row gx-0 align-items-center">
-    <div class="col-lg-7 px-5 text-start">
-      <div class="h-100 d-inline-flex align-items-center me-4">
-        <i class="fa fa-phone-alt me-2"></i>
-        <small>+57 313 212 5646 – +57 310 763 8963</small>
-      </div>
-      <div class="h-100 d-inline-flex align-items-center me-4">
-        <i class="far fa-envelope-open me-2"></i>
-        <small>gerencia@seguroslavictoria.com</small>
-      </div>
-      <div class="h-100 d-inline-flex align-items-center">
-        <i class="far fa-clock me-2"></i>
-        <small>Lun – Vie: 07:00 am a 12:30 pm – 2:00 pm a 5:00 pm</small>
-      </div>
+    <!-- Header con fondo verde y texto blanco VISIBLE en todas las pantallas -->
+    <div class="container-fluid bg-success text-white py-2 px-0">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="fa fa-phone-alt me-2"></i>
+                    <small>+57 313 212 5646 – +57 310 763 8963</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="far fa-envelope-open me-2"></i>
+                    <small>gerencia@seguroslavictoria.com</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <i class="far fa-clock me-2"></i>
+                    <small>Lun – Vie: 07:00 am a 12:30 pm – 2:00 pm a 5:00 pm</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end header-social">
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="ms-4" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="ms-4" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-5 px-5 text-end header-social">
-      <div class="h-100 d-inline-flex align-items-center">
-        <a class="ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
-        <a class="ms-4" href="#"><i class="fab fa-twitter"></i></a>
-        <a class="ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a class="ms-4" href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
 
 
     <!-- Navbar -->
@@ -132,13 +139,11 @@
                 <strong>SEGUROS LA VICTORIA LTDA</strong>
             </h1>
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div
-                class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+            <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
                 <a href="{% url 'pages:index' %}" class="nav-item nav-link active">Inicio</a>
                 <a href="{% url 'pages:about' %}" class="nav-item nav-link">Sobre Nosotros</a>
                 <a href="{% url 'pages:service' %}" class="nav-item nav-link">Nuestros Servicios</a>
@@ -149,97 +154,159 @@
         <a href="https://wa.link/wqkm8c" class="btn btn-primary px-3 d-none d-lg-block">Obtener Cotización</a>
     </nav>
 
-    <!-- Carrusel -->
+    <!-- Hero Section Minimalista -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{% static 'img/carousel-1.jpg' %}" alt="Imagen 1">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <h1 class="display-3 text-dark mb-4 animated slideInDown">El seguro crea bienestar para todos</h1>
-                                    <p class="fs-5 text-body mb-5">Seguridad y confianza.</p>
-                                    <a href="#" class="btn btn-primary py-3 px-5">Más Detalles</a>
+                    <div class="position-relative" style="height: 70vh; min-height: 500px;">
+                        <img class="w-100 h-100" src="{% static 'img/carousel-1.jpg' %}" alt="Seguros La Victoria"
+                            style="object-fit: cover; filter: brightness(0.7);">
+                        <div class="position-absolute top-0 start-0 w-100 h-100"
+                            style="background: linear-gradient(135deg, rgba(13, 110, 253, 0.8) 0%, rgba(108, 117, 125, 0.6) 100%);">
+                        </div>
+                        <div class="carousel-caption h-100 d-flex align-items-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 text-center">
+                                        <h1 class="display-2 fw-bold text-white mb-4 animated slideInDown">
+                                            El seguro crea <span class="text-warning">bienestar</span> para todos
+                                        </h1>
+                                        <p class="fs-4 text-white-50 mb-5 animated slideInUp">
+                                            35 años protegiendo lo que más valoras con seguridad y confianza
+                                        </p>
+                                        <div class="d-flex flex-wrap justify-content-center gap-3 animated slideInUp">
+                                            <a href="{% url 'pages:service' %}"
+                                                class="btn btn-primary btn-lg px-5 py-3 rounded-pill">
+                                                <i class="fas fa-shield-alt me-2"></i>Ver Servicios
+                                            </a>
+                                            <a href="https://wa.link/wqkm8c"
+                                                class="btn btn-success btn-lg px-5 py-3 rounded-pill">
+                                                <i class="fab fa-whatsapp me-2"></i>Cotizar Ahora
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{% static 'img/carousel-2.jpg' %}" alt="Imagen 2">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <h1 class="display-3 text-dark mb-4 animated slideInDown">Aquí comienza tu tranquilidad</h1>
-                                    <p class="fs-5 text-body mb-5">Planes hechos a tu medida para cada etapa de la vida.</p>
-                                    <a href="#" class="btn btn-primary py-3 px-5">Más Detalles</a>
+                    <div class="position-relative" style="height: 70vh; min-height: 500px;">
+                        <img class="w-100 h-100" src="{% static 'img/carousel-2.jpg' %}" alt="Tranquilidad Seguros"
+                            style="object-fit: cover; filter: brightness(0.7);">
+                        <div class="position-absolute top-0 start-0 w-100 h-100"
+                            style="background: linear-gradient(135deg, rgba(25, 135, 84, 0.8) 0%, rgba(108, 117, 125, 0.6) 100%);">
+                        </div>
+                        <div class="carousel-caption h-100 d-flex align-items-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 text-center">
+                                        <h1 class="display-2 fw-bold text-white mb-4 animated slideInDown">
+                                            Aquí comienza tu <span class="text-warning">tranquilidad</span>
+                                        </h1>
+                                        <p class="fs-4 text-white-50 mb-5 animated slideInUp">
+                                            Planes hechos a tu medida para cada etapa de la vida
+                                        </p>
+                                        <div class="d-flex flex-wrap justify-content-center gap-3 animated slideInUp">
+                                            <a href="{% url 'pages:contact' %}"
+                                                class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill">
+                                                <i class="fas fa-user-tie me-2"></i>Hablar con Asesor
+                                            </a>
+                                            <a href="tel:+573132125646"
+                                                class="btn btn-warning btn-lg px-5 py-3 rounded-pill">
+                                                <i class="fas fa-phone me-2"></i>Llamar Ahora
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
     </div>
 
-    <!-- Sección Sobre Nosotros -->
-    <div class="container-xxl py-5">
+    <!-- Sección Sobre Nosotros - Diseño Minimalista -->
+    <div class="container-xxl py-5 bg-light">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden rounded ps-5 pt-5 h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100"
-                            src="{% static 'img/about.jpg' %}"
-                            alt="Sobre Nosotros" style="object-fit: cover;">
-                        <div class="position-absolute top-0 start-0 bg-white rounded pe-3 pb-3"
-                            style="width: 200px; height: 200px;">
-                            <div
-                                class="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3">
-                                <h1 class="text-white mb-0">35</h1>
-                                <h2 class="text-white">Años</h2>
-                                <h5 class="text-white mb-0">de Experiencia</h5>
+                    <div class="position-relative">
+                        <div class="bg-white rounded-3 shadow-sm overflow-hidden">
+                            <img class="w-100" src="{% static 'img/about.jpg' %}" alt="Sobre Nosotros"
+                                style="height: 400px; object-fit: cover;">
+                            <div class="position-absolute top-4 start-4">
+                                <div class="bg-primary rounded-3 text-white p-4 text-center shadow-lg"
+                                    style="min-width: 180px;">
+                                    <h1 class="display-4 fw-bold mb-0">35</h1>
+                                    <h5 class="mb-0">Años de Experiencia</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h1 class="display-6 mb-5">Estamos para ayudarte a proteger lo que más importa</h1>
-                    <p class="fs-5 text-primary mb-4">Coberturas flexibles, asesoría experta y atención personalizada.</p>
-                    <div class="row g-4 mb-4">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <img class="flex-shrink-0 me-3"
-                                    src="{% static 'img/icon/icon-04-primary.png' %}" alt="Planes Flexibles">
-                                <h5 class="mb-0">Planes Flexibles</h5>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="ps-lg-4">
+                        <h2 class="display-5 fw-bold text-dark mb-4">
+                            Protegemos lo que más <span class="text-primary">importa</span>
+                        </h2>
+                        <p class="lead text-muted mb-4">
+                            Con 35 años de experiencia, somos tu aliado de confianza en protección integral.
+                            Ofrecemos coberturas flexibles, asesoría experta y atención personalizada.
+                        </p>
+
+                        <!-- Características principales -->
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-primary bg-opacity-10 rounded-circle p-3 me-3">
+                                        <i class="fas fa-cogs text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Planes Flexibles</h6>
+                                        <small class="text-muted">Adaptados a tu necesidad</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-success bg-opacity-10 rounded-circle p-3 me-3">
+                                        <i class="fas fa-shield-alt text-success"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Garantía Total</h6>
+                                        <small class="text-muted">Respaldo completo</small>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+
+                        <p class="mb-4">
+                            En <strong class="text-primary">SEGUROS LA VICTORIA LTDA</strong> nos comprometemos a
+                            brindarte
+                            seguridad y tranquilidad a través de nuestros productos y servicios especializados.
+                        </p>
+
+                        <!-- Información de contacto -->
+                        <div class="bg-white rounded-3 p-4 shadow-sm">
                             <div class="d-flex align-items-center">
-                                <img class="flex-shrink-0 me-3"
-                                    src="{% static 'img/icon/icon-03-primary.png' %}" alt="Garantía de Reembolso">
-                                <h5 class="mb-0">Garantía de Reembolso</h5>
+                                <img class="rounded-circle me-3" src="{% static 'img/profile.jpg' %}" alt="Contacto"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Contacto Directo</h6>
+                                    <p class="text-primary mb-0 fw-medium">+57 313 212 5646 - +57 310 763 8963</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <p>Con <strong>SEGUROS LA VICTORIA LTDA</strong> nos comprometemos a brindarte seguridad y tranquilidad a través de nuestros productos y servicios.</p>
-                    <div class="border-top mt-4 pt-4">
-                        <div class="d-flex align-items-center">
-                            <img class="flex-shrink-0 rounded-circle me-3"
-                                src="{% static 'img/profile.jpg' %}" alt="Contacto">
-                            <h5 class="mb-0">Llámanos: +573132125646 - +573107638963</h5>
                         </div>
                     </div>
                 </div>
@@ -254,7 +321,8 @@
                 <div class="col-lg-6 facts-text wow fadeIn" data-wow-delay="0.1s">
                     <div class="h-100 px-4 ps-lg-0">
                         <h1 class="text-white mb-4">Para Personas y Empresas</h1>
-                        <p class="text-light mb-5">Soluciones diseñadas para proteger tu patrimonio y garantizar tu tranquilidad financiera.</p>
+                        <p class="text-light mb-5">Soluciones diseñadas para proteger tu patrimonio y garantizar tu
+                            tranquilidad financiera.</p>
                         <a href="#" class="align-self-start btn btn-secondary py-3 px-5">Más Detalles</a>
                     </div>
                 </div>
@@ -263,23 +331,25 @@
                         <div class="row g-5">
                             <div class="col-sm-12">
                                 <h1 class="display-5" data-toggle="counter-up">MISIÓN</h1>
-                                <p class="fs-5 text">Somos una empresa especializada en la prestación de servicios de comercialización,
-gestión y administración de planes de seguros a diferentes personas y
-organizaciones para garantizar su protección ante diferentes situaciones de riesgos
-futuras. Garantizando un excelente servicio y cumplimiento en los compromisos
-adquiridos de manera eficiente, oportuna y segura, en un ambiente de respeto,
-responsabilidad, integridad y calidez generando satisfacción del cliente.</p>
+                                <p class="fs-5 text">Somos una empresa especializada en la prestación de servicios de
+                                    comercialización,
+                                    gestión y administración de planes de seguros a diferentes personas y
+                                    organizaciones para garantizar su protección ante diferentes situaciones de riesgos
+                                    futuras. Garantizando un excelente servicio y cumplimiento en los compromisos
+                                    adquiridos de manera eficiente, oportuna y segura, en un ambiente de respeto,
+                                    responsabilidad, integridad y calidez generando satisfacción del cliente.</p>
 
 
                             </div>
                             <div class="col-sm-12">
                                 <h1 class="display-5" data-toggle="counter-up">VISIÓN</h1>
-                                <p class="fs-5 text"><strong>SEGUROS LA VICTORIA LTDA</strong>. Se proyecta como la empresa líder en el
-departamento del meta, reconocida por ofrecer la protección que el
-cliente busca en planes de seguros, distinguiéndonos por nuestra
-seriedad, puntualidad, responsabilidad y personal calificado,
-generando a nuestros clientes seguridad, comodidad y satisfacción
-por los servicios prestados.</p>
+                                <p class="fs-5 text"><strong>SEGUROS LA VICTORIA LTDA</strong>. Se proyecta como la
+                                    empresa líder en el
+                                    departamento del meta, reconocida por ofrecer la protección que el
+                                    cliente busca en planes de seguros, distinguiéndonos por nuestra
+                                    seriedad, puntualidad, responsabilidad y personal calificado,
+                                    generando a nuestros clientes seguridad, comodidad y satisfacción
+                                    por los servicios prestados.</p>
 
                             </div>
 
@@ -296,7 +366,8 @@ por los servicios prestados.</p>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h1 class="display-6 mb-5">Razones para elegirnos</h1>
-                    <p class="mb-4">En <strong>SEGUROS LA VICTORIA LTDA</strong> combinamos tecnología, experiencia y cercanía para ofrecer el mejor servicio.</p>
+                    <p class="mb-4">En <strong>SEGUROS LA VICTORIA LTDA</strong> combinamos tecnología, experiencia y
+                        cercanía para ofrecer el mejor servicio.</p>
                     <div class="row g-3">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="bg-light rounded h-100 p-3">
@@ -342,8 +413,7 @@ por los servicios prestados.</p>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100"
-                            src="{% static 'img/feature.jpg' %}"
+                        <img class="position-absolute w-100 h-100" src="{% static 'img/feature.jpg' %}"
                             alt="Características" style="object-fit: cover;">
                     </div>
                 </div>
@@ -351,41 +421,309 @@ por los servicios prestados.</p>
         </div>
     </div>
 
-{% load static %}
-<!-- Servicios Profesionales de Seguros -->
-
-<div class="container-xxl py-5">
-  <div class="container">
-    <div class="text-center mx-auto" style="max-width: 500px;">
-      <h1 class="display-6 mb-5">Servicios Profesionales de Seguros</h1>
-    </div>
-    <div class="row g-4 justify-content-center">
-      {% for s in servicios %}
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="{{ s.delay }}">
-          <div class="service-item rounded h-100"
-               style="
-                 position: relative;
-                 overflow: hidden;
-                 height: 300px;
-                 padding: 2rem;
-                 background-image: url('{{ s.imagen.url }}');
-                 background-size: cover;
-                 background-position: center;
-                 background-repeat: no-repeat;
-
-               ">
-            <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4);"></div>
-            <div style="position: relative; z-index: 1; color: #fff;">
-              <h4>{{ s.titulo }}</h4>
-              <p>{{ s.descripcion }}</p>
-              <a class="btn btn-light px-3" href="{% url 'pages:detalle_service' s.id %}">Ver Más</a>
+    {% load static %}
+    <!-- Servicios Profesionales de Seguros - Diseño Minimalista -->
+    <div class="container-xxl py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h1 class="display-5 fw-bold text-dark mb-3">Nuestros Servicios</h1>
+                <p class="lead text-muted">Soluciones integrales de seguros diseñadas para proteger lo que más valoras
+                </p>
             </div>
-          </div>
+
+            <div class="row g-4">
+                {% for s in servicios %}
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="{{ s.delay }}">
+                    <div class="service-card h-100 position-relative overflow-hidden rounded-3 shadow-sm bg-white"
+                        style="transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.08);">
+
+                        <!-- Imagen de fondo minimalista -->
+                        <div class="service-image position-relative" style="height: 200px; overflow: hidden;">
+                            {% if s.imagen %}
+                            <img src="{{ s.imagen.url }}" alt="{{ s.titulo }}" class="w-100 h-100"
+                                style="object-fit: cover; filter: brightness(0.9);">
+                            {% else %}
+                            <div class="w-100 h-100 d-flex align-items-center justify-content-center"
+                                style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <i class="fas fa-shield-alt text-white" style="font-size: 3rem; opacity: 0.8;"></i>
+                            </div>
+                            {% endif %}
+                            <div class="position-absolute top-0 start-0 w-100 h-100"
+                                style="background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);">
+                            </div>
+                        </div>
+
+                        <!-- Contenido de la card -->
+                        <div class="p-4">
+                            <h5 class="fw-bold text-dark mb-3" style="line-height: 1.3;">{{ s.titulo }}</h5>
+                            <p class="text-muted mb-4" style="font-size: 0.95rem; line-height: 1.6;">
+                                {{ s.descripcion|truncatewords:20 }}
+                            </p>
+                            <a href="{% url 'pages:detalle_service' s.id %}"
+                                class="btn btn-outline-primary btn-sm fw-medium px-4 py-2"
+                                style="border-radius: 25px; transition: all 0.3s ease;">
+                                Ver Detalles <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+
+                        <!-- Hover effect -->
+                        <style>
+                            .service-card:hover {
+                                transform: translateY(-5px);
+                                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+                            }
+
+                            .service-card:hover .btn-outline-primary {
+                                background-color: #0d6efd;
+                                color: white;
+                                border-color: #0d6efd;
+                            }
+                        </style>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Call to action -->
+            <div class="text-center mt-5">
+                <a href="{% url 'pages:service' %}" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-medium">
+                    Ver Todos los Servicios
+                </a>
+            </div>
         </div>
-      {% endfor %}
     </div>
-  </div>
-</div>
+
+    <!-- Sección FAQ - Preguntas Frecuentes -->
+    <div class="container-xxl py-5 bg-white">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h2 class="display-5 fw-bold text-dark mb-4">Preguntas Frecuentes</h2>
+                <p class="lead text-muted">Encuentra respuestas rápidas a las dudas más comunes sobre nuestros seguros
+                </p>
+            </div>
+
+            <!-- Pestañas de categorías -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center flex-wrap gap-2" id="faq-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active rounded-pill px-4 py-2" id="general-tab"
+                                data-bs-toggle="pill" data-bs-target="#general" type="button" role="tab">
+                                <i class="fas fa-info-circle me-2"></i>General
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill px-4 py-2" id="seguros-tab" data-bs-toggle="pill"
+                                data-bs-target="#seguros" type="button" role="tab">
+                                <i class="fas fa-shield-alt me-2"></i>Seguros
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill px-4 py-2" id="reclamos-tab" data-bs-toggle="pill"
+                                data-bs-target="#reclamos" type="button" role="tab">
+                                <i class="fas fa-file-alt me-2"></i>Reclamos
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill px-4 py-2" id="pagos-tab" data-bs-toggle="pill"
+                                data-bs-target="#pagos" type="button" role="tab">
+                                <i class="fas fa-credit-card me-2"></i>Pagos
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill px-4 py-2" id="cobertura-tab" data-bs-toggle="pill"
+                                data-bs-target="#cobertura" type="button" role="tab">
+                                <i class="fas fa-umbrella me-2"></i>Cobertura
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content" id="faq-content">
+                <!-- General -->
+                <div class="tab-pane fade show active" id="general" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="accordion" id="accordionGeneral">
+                                {% for faq in faqs %}
+                                {% if faq.categoria == 'general' %}
+                                <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-3 fw-medium" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-general-{{ faq.id }}">
+                                            <i class="fas fa-question-circle text-primary me-3"></i>
+                                            {{ faq.pregunta }}
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-general-{{ faq.id }}" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionGeneral">
+                                        <div class="accordion-body pt-0">
+                                            <div class="border-start border-primary border-4 ps-4 ms-3">
+                                                <p class="mb-0 text-muted" style="line-height: 1.7;">{{ faq.respuesta }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seguros -->
+                <div class="tab-pane fade" id="seguros" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="accordion" id="accordionSeguros">
+                                {% for faq in faqs %}
+                                {% if faq.categoria == 'seguros' %}
+                                <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-3 fw-medium" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-seguros-{{ faq.id }}">
+                                            <i class="fas fa-shield-alt text-success me-3"></i>
+                                            {{ faq.pregunta }}
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-seguros-{{ faq.id }}" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionSeguros">
+                                        <div class="accordion-body pt-0">
+                                            <div class="border-start border-success border-4 ps-4 ms-3">
+                                                <p class="mb-0 text-muted" style="line-height: 1.7;">{{ faq.respuesta }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reclamos -->
+                <div class="tab-pane fade" id="reclamos" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="accordion" id="accordionReclamos">
+                                {% for faq in faqs %}
+                                {% if faq.categoria == 'reclamos' %}
+                                <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-3 fw-medium" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-reclamos-{{ faq.id }}">
+                                            <i class="fas fa-file-alt text-warning me-3"></i>
+                                            {{ faq.pregunta }}
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-reclamos-{{ faq.id }}" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionReclamos">
+                                        <div class="accordion-body pt-0">
+                                            <div class="border-start border-warning border-4 ps-4 ms-3">
+                                                <p class="mb-0 text-muted" style="line-height: 1.7;">{{ faq.respuesta }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagos -->
+                <div class="tab-pane fade" id="pagos" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="accordion" id="accordionPagos">
+                                {% for faq in faqs %}
+                                {% if faq.categoria == 'pagos' %}
+                                <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-3 fw-medium" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-pagos-{{ faq.id }}">
+                                            <i class="fas fa-credit-card text-info me-3"></i>
+                                            {{ faq.pregunta }}
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-pagos-{{ faq.id }}" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionPagos">
+                                        <div class="accordion-body pt-0">
+                                            <div class="border-start border-info border-4 ps-4 ms-3">
+                                                <p class="mb-0 text-muted" style="line-height: 1.7;">{{ faq.respuesta }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cobertura -->
+                <div class="tab-pane fade" id="cobertura" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="accordion" id="accordionCobertura">
+                                {% for faq in faqs %}
+                                {% if faq.categoria == 'cobertura' %}
+                                <div class="accordion-item border-0 mb-3 shadow-sm rounded-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed rounded-3 fw-medium" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-cobertura-{{ faq.id }}">
+                                            <i class="fas fa-umbrella text-danger me-3"></i>
+                                            {{ faq.pregunta }}
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-cobertura-{{ faq.id }}" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionCobertura">
+                                        <div class="accordion-body pt-0">
+                                            <div class="border-start border-danger border-4 ps-4 ms-3">
+                                                <p class="mb-0 text-muted" style="line-height: 1.7;">{{ faq.respuesta }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to action final -->
+            <div class="text-center mt-5">
+                <div class="bg-light rounded-3 p-5">
+                    <h4 class="fw-bold text-dark mb-3">¿No encontraste tu respuesta?</h4>
+                    <p class="text-muted mb-4">Nuestros asesores especializados están listos para resolver todas tus
+                        dudas</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="https://wa.link/wqkm8c" class="btn btn-success px-4 py-2 rounded-pill">
+                            <i class="fab fa-whatsapp me-2"></i>Preguntar por WhatsApp
+                        </a>
+                        <a href="tel:+573132125646" class="btn btn-primary px-4 py-2 rounded-pill">
+                            <i class="fas fa-phone me-2"></i>Llamar Ahora
+                        </a>
+                        <a href="{% url 'pages:contact' %}" class="btn btn-outline-secondary px-4 py-2 rounded-pill">
+                            <i class="fas fa-envelope me-2"></i>Enviar Consulta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Cita -->
@@ -393,85 +731,67 @@ por los servicios prestados.</p>
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-6 text-white mb-5">Somos <strong>SEGUROS LA VICTORIA LTDA</strong>, tu aliado de confianza</h1>
-                    <p class="text-white mb-5">Brindamos soluciones integrales de seguros adaptadas a tus necesidades. ¡Agenda tu cita y recibe atención personalizada!</p>
+                    <h1 class="display-6 text-white mb-5">Somos <strong>SEGUROS LA VICTORIA LTDA</strong>, tu aliado de
+                        confianza</h1>
+                    <p class="text-white mb-5">Brindamos soluciones integrales de seguros adaptadas a tus necesidades.
+                        ¡Agenda tu cita y recibe atención personalizada!</p>
                     <div class="bg-white rounded p-3">
                         <div class="d-flex align-items-center bg-primary rounded p-3">
-                            <img class="flex-shrink-0 rounded-circle me-3" src="{% static 'img/profile.jpg' %}" alt="Contacto">
+                            <img class="flex-shrink-0 rounded-circle me-3" src="{% static 'img/profile.jpg' %}"
+                                alt="Contacto">
                             <h5 class="text-white mb-0">Llámanos: +573132125646 - +573107638963</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="bg-white rounded p-5">
-                       {% if appointment_success %}
-  <div class="alert alert-success">
-    ¡Tu cita ha sido solicitada con éxito!
-  </div>
-{% endif %}
-  <h1 class="display-6 mb-5">Si tienes alguna consulta, contáctanos</h1>
+                        {% if appointment_success %}
+                        <div class="alert alert-success">
+                            ¡Tu cita ha sido solicitada con éxito!
+                        </div>
+                        {% endif %}
+                        <h1 class="display-6 mb-5">Si tienes alguna consulta, contáctanos</h1>
 
-  <form method="post" action="{% url 'pages:index' %}">
-    {% csrf_token %}
-    <div class="row g-3">
-      <div class="col-sm-6">
-        <div class="form-floating">
-          <input
-            type="text"
-            name="nombre"
-            class="form-control"
-            id="nombre"
-            placeholder="Tu Nombre"
-            value="{{ request.POST.nombre|default_if_none:'' }}"
-          >
-          <label for="nombre">Tu Nombre</label>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="form-floating">
-          <input
-            type="email"
-            name="correo"
-            class="form-control"
-            id="correo"
-            placeholder="Tu Correo"
-            value="{{ request.POST.correo|default_if_none:'' }}"
-          >
-          <label for="correo">Tu Correo</label>
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="form-floating">
-          <input
-            type="text"
-            name="asunto"
-            class="form-control"
-            id="asunto"
-            placeholder="Asunto"
-            value="{{ request.POST.asunto|default_if_none:'' }}"
-          >
-          <label for="asunto">Asunto</label>
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="form-floating">
-          <textarea
-            name="mensaje"
-            class="form-control"
-            id="mensaje"
-            placeholder="Mensaje"
-            style="height: 100px;"
-          >{{ request.POST.mensaje|default_if_none:'' }}</textarea>
-          <label for="mensaje">Mensaje</label>
-        </div>
-      </div>
-      <div class="col-12">
-        <button class="btn btn-primary py-3 px-5" type="submit">
-          Enviar Mensaje
-        </button>
-      </div>
-    </div>
-  </form>
+                        <form method="post" action="{% url 'pages:index' %}">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="nombre" class="form-control" id="nombre"
+                                            placeholder="Tu Nombre"
+                                            value="{{ request.POST.nombre|default_if_none:'' }}">
+                                        <label for="nombre">Tu Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" name="correo" class="form-control" id="correo"
+                                            placeholder="Tu Correo"
+                                            value="{{ request.POST.correo|default_if_none:'' }}">
+                                        <label for="correo">Tu Correo</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="asunto" class="form-control" id="asunto"
+                                            placeholder="Asunto" value="{{ request.POST.asunto|default_if_none:'' }}">
+                                        <label for="asunto">Asunto</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Mensaje"
+                                            style="height: 100px;">{{ request.POST.mensaje|default_if_none:'' }}</textarea>
+                                        <label for="mensaje">Mensaje</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary py-3 px-5" type="submit">
+                                        Enviar Mensaje
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -486,7 +806,8 @@ por los servicios prestados.</p>
             </div>
             <div class="row g-4">
                 {% for miembro in equipo %}
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="{{ forloop.counter0|add:"0.1"|floatformat:1 }}s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="{{ forloop.counter0|add:" 0.1"|floatformat:1
+                    }}s">
                     <div class="team-item rounded">
                         <img class="img-fluid" src="{% static miembro.foto %}" alt="{{ miembro.nombre }}">
                         <div class="text-center p-4">
@@ -497,10 +818,14 @@ por los servicios prestados.</p>
                             <h5>{{ miembro.nombre }}</h5>
                             <p>{{ miembro.cargo }}</p>
                             <div class="d-flex justify-content-center">
-                                {% if miembro.twitter %}<a class="btn btn-square btn-light m-1" href="{{ miembro.twitter }}"><i class="fab fa-twitter"></i></a>{% endif %}
-                                {% if miembro.facebook %}<a class="btn btn-square btn-light m-1" href="{{ miembro.facebook }}"><i class="fab fa-facebook-f"></i></a>{% endif %}
-                                {% if miembro.youtube %}<a class="btn btn-square btn-light m-1" href="{{ miembro.youtube }}"><i class="fab fa-youtube"></i></a>{% endif %}
-                                {% if miembro.linkedin %}<a class="btn btn-square btn-light m-1" href="{{ miembro.linkedin }}"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+                                {% if miembro.twitter %}<a class="btn btn-square btn-light m-1"
+                                    href="{{ miembro.twitter }}"><i class="fab fa-twitter"></i></a>{% endif %}
+                                {% if miembro.facebook %}<a class="btn btn-square btn-light m-1"
+                                    href="{{ miembro.facebook }}"><i class="fab fa-facebook-f"></i></a>{% endif %}
+                                {% if miembro.youtube %}<a class="btn btn-square btn-light m-1"
+                                    href="{{ miembro.youtube }}"><i class="fab fa-youtube"></i></a>{% endif %}
+                                {% if miembro.linkedin %}<a class="btn btn-square btn-light m-1"
+                                    href="{{ miembro.linkedin }}"><i class="fab fa-linkedin-in"></i></a>{% endif %}
                             </div>
                         </div>
                     </div>
@@ -528,7 +853,8 @@ por los servicios prestados.</p>
                     <div class="owl-carousel testimonial-carousel">
                         {% for testimonio in testimonios %}
                         <div class="testimonial-item text-center">
-                            <img class="img-fluid rounded mx-auto mb-4" src="{% static testimonio.foto %}" alt="{{ testimonio.nombre }}">
+                            <img class="img-fluid rounded mx-auto mb-4" src="{% static testimonio.foto %}"
+                                alt="{{ testimonio.nombre }}">
                             <p class="fs-5">{{ testimonio.texto }}</p>
                             <h5>{{ testimonio.nombre }}</h5>
                             <span>{{ testimonio.profesion }}</span>
@@ -582,8 +908,10 @@ por los servicios prestados.</p>
                     <h5 class="text-light mb-4">Boletín</h5>
                     <p>Suscríbete para recibir novedades y ofertas exclusivas.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" placeholder="Tu correo">
-                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribir</button>
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email"
+                            placeholder="Tu correo">
+                        <button type="button"
+                            class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribir</button>
                     </div>
                 </div>
             </div>
@@ -616,7 +944,630 @@ por los servicios prestados.</p>
 
     <!-- JavaScript del Tema -->
     <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- Chatbot Inteligente -->
+    <script src="{% static 'js/chatbot.js' %}"></script>
 </body>
 
 </html>
+
+                                <div
+
+                                    class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3">
+
+                                    <img class="align-self-center mb-3"
+
+                                        src="{% static 'img/icon/icon-03-primary.png' %}" alt="Entrega Rápida">
+
+                                    <h5 class="mb-0">Entrega Rápida</h5>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+
+                            <div class="bg-light rounded h-100 p-3">
+
+                                <div
+
+                                    class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3">
+
+                                    <img class="align-self-center mb-3"
+
+                                        src="{% static 'img/icon/icon-04-primary.png' %}" alt="Control de Pólizas">
+
+                                    <h5 class="mb-0">Control de Pólizas</h5>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+
+                            <div class="bg-light rounded h-100 p-3">
+
+                                <div
+
+                                    class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3">
+
+                                    <img class="align-self-center mb-3"
+
+                                        src="{% static 'img/icon/icon-07-primary.png' %}" alt="Ahorro">
+
+                                    <h5 class="mb-0">Ahorro</h5>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+
+                    <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
+
+                        <img class="position-absolute w-100 h-100"
+
+                            src="{% static 'img/feature.jpg' %}"
+
+                            alt="Características" style="object-fit: cover;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+{% load static %}
+
+<!-- Servicios Profesionales de Seguros -->
+
+
+
+<div class="container-xxl py-5">
+
+  <div class="container">
+
+    <div class="text-center mx-auto" style="max-width: 500px;">
+
+      <h1 class="display-6 mb-5">Servicios Profesionales de Seguros</h1>
+
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      {% for s in servicios %}
+
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="{{ s.delay }}">
+
+          <div class="service-item rounded h-100"
+
+               style="
+
+                 position: relative;
+
+                 overflow: hidden;
+
+                 height: 300px;
+
+                 padding: 2rem;
+
+                 background-image: url('{{ s.imagen.url }}');
+
+                 background-size: cover;
+
+                 background-position: center;
+
+                 background-repeat: no-repeat;
+
+
+
+               ">
+
+            <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4);"></div>
+
+            <div style="position: relative; z-index: 1; color: #fff;">
+
+              <h4>{{ s.titulo }}</h4>
+
+              <p>{{ s.descripcion }}</p>
+
+              <a class="btn btn-light px-3" href="{% url 'pages:detalle_service' s.id %}">Ver Más</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+    <!-- Cita -->
+
+    <div class="container-fluid appointment my-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+
+                    <h1 class="display-6 text-white mb-5">Somos <strong>SEGUROS LA VICTORIA LTDA</strong>, tu aliado de confianza</h1>
+
+                    <p class="text-white mb-5">Brindamos soluciones integrales de seguros adaptadas a tus necesidades. ¡Agenda tu cita y recibe atención personalizada!</p>
+
+                    <div class="bg-white rounded p-3">
+
+                        <div class="d-flex align-items-center bg-primary rounded p-3">
+
+                            <img class="flex-shrink-0 rounded-circle me-3" src="{% static 'img/profile.jpg' %}" alt="Contacto">
+
+                            <h5 class="text-white mb-0">Llámanos: +573132125646 - +573107638963</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+
+                    <div class="bg-white rounded p-5">
+
+                       {% if appointment_success %}
+
+  <div class="alert alert-success">
+
+    ¡Tu cita ha sido solicitada con éxito!
+
+  </div>
+
+{% endif %}
+
+  <h1 class="display-6 mb-5">Si tienes alguna consulta, contáctanos</h1>
+
+
+
+  <form method="post" action="{% url 'pages:index' %}">
+
+    {% csrf_token %}
+
+    <div class="row g-3">
+
+      <div class="col-sm-6">
+
+        <div class="form-floating">
+
+          <input
+
+            type="text"
+
+            name="nombre"
+
+            class="form-control"
+
+            id="nombre"
+
+            placeholder="Tu Nombre"
+
+            value="{{ request.POST.nombre|default_if_none:'' }}"
+
+          >
+
+          <label for="nombre">Tu Nombre</label>
+
+        </div>
+
+      </div>
+
+      <div class="col-sm-6">
+
+        <div class="form-floating">
+
+          <input
+
+            type="email"
+
+            name="correo"
+
+            class="form-control"
+
+            id="correo"
+
+            placeholder="Tu Correo"
+
+            value="{{ request.POST.correo|default_if_none:'' }}"
+
+          >
+
+          <label for="correo">Tu Correo</label>
+
+        </div>
+
+      </div>
+
+      <div class="col-12">
+
+        <div class="form-floating">
+
+          <input
+
+            type="text"
+
+            name="asunto"
+
+            class="form-control"
+
+            id="asunto"
+
+            placeholder="Asunto"
+
+            value="{{ request.POST.asunto|default_if_none:'' }}"
+
+          >
+
+          <label for="asunto">Asunto</label>
+
+        </div>
+
+      </div>
+
+      <div class="col-12">
+
+        <div class="form-floating">
+
+          <textarea
+
+            name="mensaje"
+
+            class="form-control"
+
+            id="mensaje"
+
+            placeholder="Mensaje"
+
+            style="height: 100px;"
+
+          >{{ request.POST.mensaje|default_if_none:'' }}</textarea>
+
+          <label for="mensaje">Mensaje</label>
+
+        </div>
+
+      </div>
+
+      <div class="col-12">
+
+        <button class="btn btn-primary py-3 px-5" type="submit">
+
+          Enviar Mensaje
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Equipo -->
+
+    <div class="container-xxl py-5">
+
+        <div class="container">
+
+            <div class="text-center mx-auto" style="max-width: 500px;">
+
+                <h1 class="display-6 mb-5">Conoce a Nuestro Equipo Profesional</h1>
+
+            </div>
+
+            <div class="row g-4">
+
+                {% for miembro in equipo %}
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="{{ forloop.counter0|add:"0.1"|floatformat:1 }}s">
+
+                    <div class="team-item rounded">
+
+                        <img class="img-fluid" src="{% static miembro.foto %}" alt="{{ miembro.nombre }}">
+
+                        <div class="text-center p-4">
+
+                            <h5>{{ miembro.nombre }}</h5>
+
+                            <span>{{ miembro.cargo }}</span>
+
+                        </div>
+
+                        <div class="team-text text-center bg-white p-4">
+
+                            <h5>{{ miembro.nombre }}</h5>
+
+                            <p>{{ miembro.cargo }}</p>
+
+                            <div class="d-flex justify-content-center">
+
+                                {% if miembro.twitter %}<a class="btn btn-square btn-light m-1" href="{{ miembro.twitter }}"><i class="fab fa-twitter"></i></a>{% endif %}
+
+                                {% if miembro.facebook %}<a class="btn btn-square btn-light m-1" href="{{ miembro.facebook }}"><i class="fab fa-facebook-f"></i></a>{% endif %}
+
+                                {% if miembro.youtube %}<a class="btn btn-square btn-light m-1" href="{{ miembro.youtube }}"><i class="fab fa-youtube"></i></a>{% endif %}
+
+                                {% if miembro.linkedin %}<a class="btn btn-square btn-light m-1" href="{{ miembro.linkedin }}"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Testimonios -->
+
+    <div class="container-xxl py-5">
+
+        <div class="container">
+
+            <div class="text-center mx-auto" style="max-width: 500px;">
+
+                <h1 class="display-6 mb-5">Lo que dicen nuestros clientes</h1>
+
+            </div>
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 d-none d-lg-block">
+
+                    <div class="testimonial-left h-100">
+
+                        {% for img in testimonios_imagenes %}
+
+                        <img class="img-fluid animated pulse infinite" src="{% static img %}" alt="Testimonio">
+
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+
+                    <div class="owl-carousel testimonial-carousel">
+
+                        {% for testimonio in testimonios %}
+
+                        <div class="testimonial-item text-center">
+
+                            <img class="img-fluid rounded mx-auto mb-4" src="{% static testimonio.foto %}" alt="{{ testimonio.nombre }}">
+
+                            <p class="fs-5">{{ testimonio.texto }}</p>
+
+                            <h5>{{ testimonio.nombre }}</h5>
+
+                            <span>{{ testimonio.profesion }}</span>
+
+                        </div>
+
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 d-none d-lg-block">
+
+                    <div class="testimonial-right h-100">
+
+                        {% for img in testimonios_imagenes %}
+
+                        <img class="img-fluid animated pulse infinite" src="{% static img %}" alt="Testimonio">
+
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h1 class="text-white mb-4">
+
+                        <img class="img-fluid me-3" src="{% static 'img/logoseguros.png' %}" alt="">
+
+                        <strong>SEGUROS LA VICTORIA LTDA</strong>
+
+                    </h1>
+
+                    <p>seguridad y confianza.</p>
+
+                    <div class="d-flex pt-2">
+
+                        <a class="btn btn-square me-1" href="#"><i class="fab fa-twitter"></i></a>
+
+                        <a class="btn btn-square me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a class="btn btn-square me-1" href="#"><i class="fab fa-youtube"></i></a>
+
+                        <a class="btn btn-square me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h5 class="text-light mb-4">Dirección</h5>
+
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Calle 33a #38-23, Barzal, Villavicencio</p>
+
+                    <p><i class="fa fa-phone-alt me-3"></i>+573132125646 - +573107638963</p>
+
+                    <p><i class="fa fa-envelope me-3"></i>gerencia@seguroslavictoria.com</p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h5 class="text-light mb-4">Enlaces Rápidos</h5>
+
+                    <a class="btn btn-link" href="{% url 'pages:about' %}">Sobre Nosotros</a>
+
+                    <a class="btn btn-link" href="{% url 'pages:service' %}">Servicios</a>
+
+                    <a class="btn btn-link" href="{% url 'pages:contact' %}">Contacto</a>
+
+                    <a class="btn btn-link" href="#">Términos y Condiciones</a>
+
+                    <a class="btn btn-link" href="#">Soporte</a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h5 class="text-light mb-4">Boletín</h5>
+
+                    <p>Suscríbete para recibir novedades y ofertas exclusivas.</p>
+
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" placeholder="Tu correo">
+
+                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">Suscribir</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid copyright">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                        &copy; 2025 <strong>SEGUROS LA VICTORIA LTDA</strong>, Todos los derechos reservados.
+
+                    </div>
+
+                    <div class="col-md-6 text-center text-md-end">
+
+                        Diseñado por <a href="https://htmlcodex.com">HTML Codex</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Back to Top -->
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+    <!-- Bibliotecas JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+
+
+
+    <!-- JavaScript del Tema -->
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+
+
+</html>
+
+
 
