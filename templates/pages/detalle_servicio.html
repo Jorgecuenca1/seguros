@@ -3,46 +3,46 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <title>Seguros Victoria – {{ servicio.titulo }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="">
-    <meta name="description" content="{{ servicio.titulo }}">
+  <meta charset="utf-8">
+  <title>Seguros Victoria – {{ servicio.titulo }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="{{ servicio.titulo }}">
 
-    <!-- Favicon -->
-    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+  <!-- Favicon -->
+  <link href="{% static 'img/favicon.ico' %}" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;family=Poppins:wght@600;700&amp;display=swap"
-      rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;family=Poppins:wght@600;700&amp;display=swap"
+    rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+  <!-- Icon Font Stylesheet -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
-    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
 
-    <!-- Bootstrap Personalizado -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Bootstrap Personalizado -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
-    <!-- Estilos del Tema -->
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
- <style>
-        /* Siempre envuelve el texto si no cabe en una línea */
-.navbar-brand h1 {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0;
-}
+  <!-- Estilos del Tema -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <style>
+    /* Siempre envuelve el texto si no cabe en una línea */
+    .navbar-brand h1 {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0;
+    }
 
-/* Asegura que el <strong> ocupe una línea propia cuando no quepa */
-.navbar-brand h1 strong {
+    /* Asegura que el <strong> ocupe una línea propia cuando no quepa */
+    .navbar-brand h1 strong {
       white-space: normal;
       /* permite saltos de línea */
       flex-basis: 100%;
@@ -51,126 +51,126 @@
       /* opcional: centrar texto en móvil */
       font-size: 1rem;
       /* ajustar ligeramente el tamaño para móvil */
-}
+    }
 
-/* Ajusta la imagen en móvil para que no ocupe demasiado espacio */
-@media (max-width: 576px) {
-  .navbar-brand img {
+    /* Ajusta la imagen en móvil para que no ocupe demasiado espacio */
+    @media (max-width: 576px) {
+      .navbar-brand img {
         max-height: 40px;
         /* reduce altura si es muy grande */
-    margin-right: 0.5rem;
+        margin-right: 0.5rem;
         margin-bottom: 0.25rem;
         /* separa un poco del texto */
         flex: 0 0 auto;
         /* evita que la imagen se estire */
-  }
-}
+      }
+    }
 
-  /* Ajuste de color para los iconos sociales */
-  .header-social a {
+    /* Ajuste de color para los iconos sociales */
+    .header-social a {
       color: rgba(255, 255, 255, 0.75);
       /* blanco translucido */
-    transition: color 0.3s ease;
-  }
+      transition: color 0.3s ease;
+    }
 
-  .header-social a:hover {
+    .header-social a:hover {
       color: #a2d5f2;
       /* azul claro al pasar el ratón */
-  }
-
-  /* Logo más grande */
-  .navbar-brand .logo-img {
-    max-height: 300px;
-  }
-
-  @media (max-width: 576px) {
-    .navbar-brand .logo-img {
-      max-height: 200px;
     }
-  }
+
+    /* Logo más grande */
+    .navbar-brand .logo-img {
+      max-height: 300px;
+    }
+
+    @media (max-width: 576px) {
+      .navbar-brand .logo-img {
+        max-height: 200px;
+      }
+    }
 
     <style>.brand-text {
-    font-weight: 700;
-  }
+      font-weight: 700;
+    }
   </style>
 </head>
 
 <body>
-    <!-- Spinner -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
-    </div>
+  <!-- Spinner -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
 
-<!-- Header con fondo verde y texto blanco VISIBLE en todas las pantallas -->
-<div class="container-fluid bg-success text-white py-2 px-0">
-  <div class="row gx-0 align-items-center">
-    <div class="col-lg-7 px-5 text-start">
-      <div class="h-100 d-inline-flex align-items-center me-4">
-        <i class="fa fa-phone-alt me-2"></i>
-        <small>+57 313 212 5646 – +57 310 763 8963</small>
+  <!-- Header con fondo verde y texto blanco VISIBLE en todas las pantallas -->
+  <div class="container-fluid bg-success text-white py-2 px-0">
+    <div class="row gx-0 align-items-center">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <i class="fa fa-phone-alt me-2"></i>
+          <small>+57 313 212 5646 – +57 310 763 8963</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <i class="far fa-envelope-open me-2"></i>
+          <small>gerencia@seguroslavictoria.com</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <i class="far fa-clock me-2"></i>
+          <small>Lun – Vie: 07:00 am a 12:30 pm – 2:00 pm a 5:00 pm</small>
+        </div>
       </div>
-      <div class="h-100 d-inline-flex align-items-center me-4">
-        <i class="far fa-envelope-open me-2"></i>
-        <small>gerencia@seguroslavictoria.com</small>
-      </div>
-      <div class="h-100 d-inline-flex align-items-center">
-        <i class="far fa-clock me-2"></i>
-        <small>Lun – Vie: 07:00 am a 12:30 pm – 2:00 pm a 5:00 pm</small>
-      </div>
-    </div>
-    <div class="col-lg-5 px-5 text-end header-social">
-      <div class="h-100 d-inline-flex align-items-center">
-        <a class="ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
-        <a class="ms-4" href="#"><i class="fab fa-twitter"></i></a>
-        <a class="ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a class="ms-4" href="#"><i class="fab fa-instagram"></i></a>
+      <div class="col-lg-5 px-5 text-end header-social">
+        <div class="h-100 d-inline-flex align-items-center">
+          <a class="ms-4" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="ms-4" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="ms-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="ms-4" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="{% url 'pages:index' %}" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0">
-                <img class="img-fluid me-3" src="{% static 'img/logoseguros.png' %}" alt="">
-                <strong>SEGUROS LA VICTORIA LTDA</strong>
-            </h1>
-        </a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+    <a href="{% url 'pages:index' %}" class="navbar-brand d-flex align-items-center">
+      <h1 class="m-0">
+        <img class="img-fluid me-3" src="{% static 'img/logoseguros.png' %}" alt="">
+        <strong>SEGUROS LA VICTORIA LTDA</strong>
+      </h1>
+    </a>
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
-                <a href="{% url 'pages:index' %}" class="nav-item nav-link active">Inicio</a>
-                <a href="{% url 'pages:about' %}" class="nav-item nav-link">Sobre Nosotros</a>
-                <a href="{% url 'pages:service' %}" class="nav-item nav-link">Nuestros Servicios</a>
+        <a href="{% url 'pages:index' %}" class="nav-item nav-link active">Inicio</a>
+        <a href="{% url 'pages:about' %}" class="nav-item nav-link">Sobre Nosotros</a>
+        <a href="{% url 'pages:service' %}" class="nav-item nav-link">Nuestros Servicios</a>
 
-                <a href="{% url 'pages:contact' %}" class="nav-item nav-link">Contáctanos</a>
-            </div>
-        </div>
-        <a href="https://wa.link/wqkm8c" class="btn btn-primary px-3 d-none d-lg-block">Obtener Cotización</a>
-    </nav>
-
-    <!-- Cabecera de Página -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <h1 class="display-4 animated slideInDown mb-4">{{ servicio.titulo }}</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="{% url 'pages:index' %}">Inicio</a></li>
-                    <li class="breadcrumb-item"><a href="{% url 'pages:service' %}">Servicios</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ servicio.titulo }}</li>
-                </ol>
-            </nav>
-        </div>
+        <a href="{% url 'pages:contact' %}" class="nav-item nav-link">Contáctanos</a>
+      </div>
     </div>
+    <a href="https://wa.link/wqkm8c" class="btn btn-primary px-3 d-none d-lg-block">Obtener Cotización</a>
+  </nav>
+
+  <!-- Cabecera de Página -->
+  <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <h1 class="display-4 animated slideInDown mb-4">{{ servicio.titulo }}</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="{% url 'pages:index' %}">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="{% url 'pages:service' %}">Servicios</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{ servicio.titulo }}</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
 
   <!-- Detalle de Servicio - Diseño Profesional Minimalista -->
   <div class="container-xxl py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
-  <div class="container">
+    <div class="container">
 
       <!-- Hero Section del Servicio -->
       <div class="row mb-5">
@@ -415,27 +415,27 @@
           <div class="col-md-6 text-center text-md-end">
             Diseñado por <a href="https://htmlcodex.com">HTML Codex</a>
           </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
-      <i class="bi bi-arrow-up"></i>
-    </a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
-    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
-    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
-    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
 
-    <!-- JavaScript del Tema -->
-    <script src="{% static 'js/main.js' %}"></script>
+  <!-- JavaScript del Tema -->
+  <script src="{% static 'js/main.js' %}"></script>
 
   <!-- Chatbot Inteligente -->
   <script src="{% static 'js/chatbot.js' %}"></script>
